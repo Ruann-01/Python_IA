@@ -1,5 +1,5 @@
 # Python_IA
-Repositório com as atividades e projetos da mentoria de Python em Inteligência Artificial 
+Repositório com as atividades e projetos da mentoria de Python em Inteligência Artificial na Dell Lead 
 
 Atividade 1 -- Revisamos métodos de listas e funções em Python
 
