@@ -22,12 +22,12 @@ Aplicamos métodos de análise de dados utilizando numpy e pands(leitura e manip
 1. engenharia de atributos (seleção de atributos, atributos polinomiais, normalização)
 2. escolha de hiperparâmetros (passo de aprendizagem, coeficiente de regularização, número de iterações)
 
-    Treine no conjunto de treino e avalie no conjunto de validação. Avalie pelo menos 5 abordagens candidatas.
+        Treine no conjunto de treino e avalie no conjunto de validação. Avalie pelo menos 5 abordagens candidatas.
 
-    Ao final, avalie como o seu melhor modelo performa no conjunto de teste e apresente o resultado.
+        Ao final, avalie como o seu melhor modelo performa no conjunto de teste e apresente o resultado.
 
-    Dica¹: utilize as classes SGDRegressor ou Ridge do scikitlearn.
+        Dica¹: utilize as classes SGDRegressor ou Ridge do scikitlearn.
 
-    Dica²: normalize os dados de entrada e saída
+        Dica²: normalize os dados de entrada e saída
 
-    Dica³: tente utilizar grid search e/ou k-fold
+        Dica³: tente utilizar grid search e/ou k-fold
