@@ -17,8 +17,7 @@ Aplicamos métodos de análise de dados utilizando numpy e pands(leitura e manip
 
 - Parte 3: Considerando o mesmo problema tratado na Parte 2, treine modelos de regressão utilizando transformações não-lineares dos atributos (x², x³, etc...). Pode-se utilizar transformações em um ou mais atributos. Treine pelo menos 3 modelos diferentes e faça o plot das curvas de regressão comparada com o scatterplot (análogo ao que foi feito na questão 5 da Parte 1). Calcule o MSE para cada um dos modelos. Qual modelo se ajustou melhor aos dados em termos de MSE?
 
-- Parte 4: Generalização, regularização e normalização
-Considere o conjunto de dados utilizado nas partes 2 e 3 de preços de casas na Califórnia. Data de entrega: 04/12
+- Parte 4: Considere o conjunto de dados utilizado nas partes 2 e 3 de preços de casas na Califórnia.
 
 Utilizando um método da validação cruzada (conjuntos de treino, validação e teste) experimente diferentes métodos de:
 
