@@ -41,3 +41,18 @@ Considere um conjunto de dados obtidos analisando imagens de câncer de mama, on
 4. Treine e avalie no conjunto de teste um modelo de regressão logística usando hiperparâmetros default e todos os dados de entrada, como baseline de desempenho. Lembre-se de normalizar os dados de entrada. As métricas de avaliação serão Acurácia, Precision, Recall, F1 score e AUC.
 5. Treine pelo menos mais 3 modelos de regressão logística diferentes, treinando e avaliando nos conjuntos de treino e validação. Modelos diferentes incluem usar atributos diferentes, transformações não-lineares nos atributos (regressão logística polinomial) ou diferentes hiperparâmetros. Após isso, escolha o melhor desses modelos para retreinar com todos os dados de treino e avalie no conjunto de teste. Compare com o resultado com a baseline. Dica: pode-se utilizar o grid search.
 6. Extra: utilize um modelo ainda não estudado na mentoria para realizar a classificação, avaliando no conjunto de teste. Compare os resultados.
+
+# Atividade 5:
+Nesta atividade iremos trabalhar com o problema de classificação de dígitos em imagens, utilizando o conhecido conjunto de dados MNIST.
+
+O conjunto de dados é formado por imagens preto e branco de 28x28 pixels que representam dígitos escritos à mão, de 0 à 9. Cada pixel possui um valor entre 0 (totalmente preto) e 255 (totalmente branco). O desafio é treinar um modelo para reconhecer corretamente cada dígito representado. Ou seja, é um problema de classificação multi-classe de 10 classes (0, 1, 2, 3, 4, 5, 6, 7, 8, 9). O conjunto já é previamente dividido em treino e teste.
+
+Dado esse problema, faça o que se pede:
+
+1. Treine e avalie (no conjunto de teste) um classificador baseline com uma MLP de uma camada. Defina a quantidade de neurônios na camada oculta e argumente o motivo da sua escolha. Utilize métricas de desempenho para classificação multiclasse de sua escolha.
+
+2. Crie uma arquitetura de MLP realizando a otimização de hiperparâmetros, usando uma técnica da sua escolha (grid search, random search). Os hiperparâmetros que serão otimizados são de sua escolha, mas devem conter o número de camadas e o número de neurônios em cada camada. Teste o melhor modelo encontrado no conjunto de teste e compare com o baseline.
+
+OBS¹: A forma mais simples de extração de atributos de imagens é considerar cada pixel como um atributo. Para isso, basta transformar a matriz de cada imagem em um vetor unidimensional. Outras técnicas de extração de atributos baseadas em PDI (processamento digital de imagens) podem ser utilizadas.
+
+OBS²: A MLP pode ser utilizada com a implementação do scikit-learn ou do keras.
