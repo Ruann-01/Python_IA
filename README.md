@@ -56,3 +56,6 @@ Dado esse problema, faça o que se pede:
 OBS¹: A forma mais simples de extração de atributos de imagens é considerar cada pixel como um atributo. Para isso, basta transformar a matriz de cada imagem em um vetor unidimensional. Outras técnicas de extração de atributos baseadas em PDI (processamento digital de imagens) podem ser utilizadas.
 
 OBS²: A MLP pode ser utilizada com a implementação do scikit-learn ou do keras.
+
+# Atividade 6:
+Criação de um modelo SVM para apresentação sobre o método.
