@@ -59,3 +59,24 @@ OBS²: A MLP pode ser utilizada com a implementação do scikit-learn ou do kera
 
 # Atividade 6:
 Criação de um modelo SVM para apresentação sobre o método.
+
+# Atividade 7:
+### Parte 1: Clusterização
+Considere o conjunto de dados sobre clientes de um shopping disponibilizado em: 
+
+https://raw.githubusercontent.com/tirthajyoti/Machine-Learning-with-Python/master/Datasets/Mall_Customers.csv 
+
+Esse conjunto de dados é composto pelas variáveis CustomerID, Gender, Age, Annual Income (k$), Spending Score (1-100). Suponha que o seu trabalho como analista de dados seja encontrar perfis de consumidores. 
+Considerando as variáveis numéricas, faça a clusterização dos dados, encontrando a quantidade ótima de clusters. 
+Mostre os valores dos atributos dos centróides de cada cluster. 
+Que observações podem ser feitas sobre cada cluster? Ou seja, que tipo de cliente cada cluster representa. Discuta.
+
+Extra: crie scatterplots com os dados clusterizados. Considere fazer gráficos dois-a-dois (use a cor para representar gênero): 
+Annual Income (k$) x Spending Score (1-100)
+Annual Income (k$) x Age
+Age x Spending Score (1-100)
+
+### Parte 2: Redução de dimensionalidade
+Considere o conjunto de dados MNIST utilizado na Atividade 6. Realize a redução de dimensionalidade dos dados com o algoritmo PCA. Escolha um algoritmo de classificação e aplique ele, comparando os resultados com e sem a redução de dimensionalidade. A quantidade de dimensões utilizadas é de sua escolha. Discuta o resultado.
+
+Extra: faça o plot de imagens do dataset após a redução de dimensionalidade.
