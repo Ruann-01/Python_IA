@@ -92,7 +92,10 @@ Nessa atividade vocês irão trabalhar em um problema de classificação de text
 
 "The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. To the best of our knowledge, it was originally collected by Ken Lang, probably for his paper “Newsweeder: Learning to filter netnews,” though he does not explicitly mention this collection. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering."
 
-Esse conjunto de dados pode ser carregado através so scikit-learn from sklearn.datasets import fetch_20newsgroups twenty_train = fetch_20newsgroups(subset='train', shuffle=True, random_state=42)
+Esse conjunto de dados pode ser carregado através:
+scikit-learn from sklearn.datasets import fetch_20newsgroups 
+
+twenty_train = fetch_20newsgroups(subset='train', shuffle=True, random_state=42)
 
 twenty_test = fetch_20newsgroups(subset='test', shuffle=True, random_state=42)
 
