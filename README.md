@@ -86,3 +86,29 @@ Age x Spending Score (1-100)
 Considere o conjunto de dados MNIST utilizado na Atividade 6. Realize a redução de dimensionalidade dos dados com o algoritmo PCA. Escolha um algoritmo de classificação e aplique ele, comparando os resultados com e sem a redução de dimensionalidade. A quantidade de dimensões utilizadas é de sua escolha. Discuta o resultado.
 
 ##### Extra: faça o plot de imagens do dataset após a redução de dimensionalidade.
+
+# Atividade 8:
+Nessa atividade vocês irão trabalhar em um problema de classificação de texto multiclasse. Considere o conjunto de dados sobre fetch_20newsgroups
+
+"The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. To the best of our knowledge, it was originally collected by Ken Lang, probably for his paper “Newsweeder: Learning to filter netnews,” though he does not explicitly mention this collection. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering."
+
+Esse conjunto de dados pode ser carregado através so scikit-learn from sklearn.datasets import fetch_20newsgroups twenty_train = fetch_20newsgroups(subset='train', shuffle=True, random_state=42)
+
+twenty_test = fetch_20newsgroups(subset='test', shuffle=True, random_state=42)
+
+Dado esse contexto, escolha um único classificador, sem otimizar hiperparametros, treine e teste modelos considerando
+
+1. Bag of Words (contagem), sem pré-processamento
+2. TF-IDF, sem pré-processamento
+3. Bag of Words, com pré-processamento
+4. TF-IDF, com pré-processamento
+5. Considere a métrica da acurácia e compare os resultados em uma tabela.
+
+As etapas de pré-processamento devem conter pelo menos:
+1. lowercase
+2. remoção de pontuação
+3. remoção de números
+4. remoção de stopwords (dica: utilize a biblioteca NLTK)
+5. lematização ou stemming (apenas um dos dois)
+
+Outras etapas que você julgar necessárias podem ser utilizadas. Crie uma função para cada etapa e uma função chamada preprocess() que chame todas as etapas.
