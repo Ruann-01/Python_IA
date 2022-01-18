@@ -115,3 +115,75 @@ As etapas de pré-processamento devem conter pelo menos:
 5. lematização ou stemming (apenas um dos dois)
 
 Outras etapas que você julgar necessárias podem ser utilizadas. Crie uma função para cada etapa e uma função chamada preprocess() que chame todas as etapas.
+
+# Trabalho Final:
+Neste trabalho final você irá pôr em prática todas as etapas exercitadas ao longo da mentoria sobre projetos de aprendizado de máquina em uma tarefa de classificação de NLP: detecção de sarcasmo. Segundo Yaghoobian et al:
+
+“Sarcasm detection is the task of identifying irony containing utterances in sentiment-bearing text. However, the figurative and creative nature of sarcasm poses a great challenge for affective computing systems performing sentiment analysis.”
+
+Detecção de sarcasmo é uma tarefa com muitas aplicações práticas interessantes,  mas também é extremamente desafiadora. Padrões linguísticos e sociais que categorizam o sarcasmo podem não estar contido unicamente no texto ou no uso de palavras específicas, dificultando que algoritmos de aprendizado de máquina aprendam a generalizar. Nesse contexto, foi proposto por Khodak et al o dataset SARC, coletado da plataforma Reddit:
+
+
+“We introduce the Self-Annotated Reddit Corpus (SARC), a large corpus for sarcasm research and for training and evaluating systems for sarcasm detection. The corpus has 1.3 million sarcastic statements -- 10 times more than any previous dataset -- and many times more instances of non-sarcastic statements, allowing for learning in both balanced and unbalanced label regimes. Each statement is furthermore self-annotated -- sarcasm is labeled by the author, not an independent annotator -- and provided with user, topic, and conversation context.”
+
+
+Em anexo, encontra-se uma amostra do SARC. Dado esse contexto, você deverá criar e validar um modelo de detecção de sarcasmo utilizando esse dataset. O trabalho deverá conter:
+
+
+1. Análise exploratória
+
+    a. Mostre exemplos de cada classe.
+
+    b. Crie pelo menos 5 gráficos, contendo um que mostre o balanceamento entre as classes. Sugestões de outros gráficos:    termos mais frequentes em cada classe, distribuição da quantidade de palavras em cada classe.
+
+    c. Discuta seus achados.
+
+
+2. Aprendizado não-supervisionado
+
+    a. Qualquer técnica pode ser utilizada, clusterização ou redução de dimensionalidade. Pode-se usar parte da análise exploratória ou como auxiliar na classificação.
+
+
+3. Limpeza e pré-processamento dos dados
+
+    a.Pelo menos 3 técnicas de pré-processamento de texto (que já não sejam utilizadas por padrão na vetorização)
+
+    b.Utilize alguma técnica de balanceamento de dados
+
+
+4. Engenharia de atributos
+
+    a. Selecione dentre os dados disponíveis quais devem ser utilizados como atributos de entrada e o método para representação vetorial.
+
+    b. Utilize pelo menos dois conjuntos de atributos de entrada, comparando as performances. Justifique suas escolhas.
+
+
+5. Estabelecimento de um baseline
+
+    a.Utilize um modelo simples, não faça otimização de hiperparâmetros. Justifique sua escolha.
+
+
+6. Seleção e avaliação de modelos
+
+    a. Escolha uma ou mais métricas de desempenho apropriadas para esta tarefa.
+
+    b. Utilize pelo menos 4 algoritmos, realizando a otimização de hiperparâmetros. Destes modelos, ao menos um deve ser um algoritmos deve ser um que não foi visto durante a mentoria. Estude o funcionamento dele. Sugestão: modelo de Deep Learning.
+
+    c. Avalie os algoritmos com hiperparâmetros otimizados no conjunto de teste.
+
+
+7. Análise de resultados
+
+    a. Mostre exemplos dos erros (falso positivos e falso negativos) para o melhor dos algoritmos experimentados.
+
+    b. Discuta os resultados e aponte quais seriam possíveis melhorias
+
+
+8. (OPCIONAL) Interpretabilidade
+
+    a. Utilize algum método que permita uma interpretação das predições de algum dos seus modelos.
+
+
+9. (OPCIONAL) Deploy
+
+    a. Implemente uma API para que o seu melhor modelo possa ser utilizado via requisições HTTP.
