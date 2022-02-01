@@ -1,5 +1,5 @@
 # Python_IA
-Repositório com as atividades e projetos da mentoria de Python em Inteligência Artificial na Dell Lead 
+Repositório com as atividades e projetos da bolsa de Python em Inteligência Artificial na Dell Lead 
 
 # Atividade 1:
 
